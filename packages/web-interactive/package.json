@@ -1,0 +1,15 @@
+{
+  "name": "web-interactive",
+  "version": "0.0.0",
+  "description": "> TODO: description",
+  "author": "gloriaJun <pureainu@gmail.com>",
+  "homepage": "https://github.com/gloriaJun/til#readme",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gloriaJun/til.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  }
+}
