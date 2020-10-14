@@ -1,0 +1,33 @@
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    border: 2px solid #000;
+    background:  #fff000;
+    /* forwards: 애니메이션이 끝난 위치에 남는다 */
+    animation: move-box 2s linear forwards;
+}
+
+.box:hover {
+    /* 기본은 running 인데, 마우스 hover 시에 멈추도록 설정 */
+    animation-play-state: paused;
+}
+
+@keyframes move-box {
+    0% {
+        transform: translate(0, 0);
+        background:  red;
+    }
+
+    50% {
+        transform: translate(300px, 0);
+        background:  orange;
+    }
+
+    100% {
+        transform: translate(400px, 400px);
+        background:  #fff000;
+    }
+}

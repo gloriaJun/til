@@ -1,0 +1,23 @@
+body {
+    background: #efefef;
+}
+.spaceship {
+    width: 150px;
+    height: 150px;
+    background: url('images/sprite_spaceship.png') no-repeat 0 0 / auto 150px;
+    animation: spaceship-ani 1s infinite steps(17);
+}
+
+@keyframes spaceship-ani {
+    /* 0% = from 으로도 사용 가능하고 생략 가능 */
+    /* to 라고 표현해도 됨 */
+    100% {
+        background-position: -2550px 0;
+    }
+}
+
+/* 
+gif를 사용하지 않고 css animation을 사용하면, 이미지도 깔끔하고, 
+속도 조절이나 
+마우스 오버 시의 이벤트 등을 css를 이용하여 제어할 수 있다
+*/
